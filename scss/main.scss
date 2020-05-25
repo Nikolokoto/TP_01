@@ -1,0 +1,23 @@
+@import "abstract/variables";
+@import "abstract/mixins";
+@import "./components/buttons";
+@import "./components/cards";
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/section_about_us";
+@import "./layouts/section_contact_us";
+@import "./layouts/section_our_clients";
+@import "./layouts/section_our_portfolio";
+@import "./layouts/section_services";
+@import "./layouts/section_team";
+@import "./layouts/section_testimonials";
+@import "./layouts/section_why_choose_us";
+
+body {
+    margin: 0;
+}
+
+p {
+    font-size: $font-size-normal;
+    font-family: $normal-font;
+}

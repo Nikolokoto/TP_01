@@ -1,0 +1,8 @@
+@import "../abstract/variables";
+
+#header {
+    display: flex;
+    .logo {
+        max-width: 200px;
+    }
+}
