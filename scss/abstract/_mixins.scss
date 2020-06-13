@@ -1,4 +1,25 @@
 @import "./variables";
 
+@mixin breakpoint-1 {
+    @media (min-width: 410px) {
+        @content;
+    }
+}
 
+@mixin breakpoint-2 {
+    @media (min-width: 770px) {
+        @content;
+    }
+}
 
+@mixin breakpoint-3 {
+    @media (min-width: 990px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-4 {
+    @media (min-width: 1220px) {
+        @content;
+    }
+}
