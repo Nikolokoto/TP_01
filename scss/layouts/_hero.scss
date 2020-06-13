@@ -1,0 +1,106 @@
+@import "../components/buttons";
+
+//HERO//
+
+#hero{
+    margin: auto;
+    .hero-container  {
+        align-items: center;
+        background-color: $dark-blue;
+        box-sizing: $border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px 15px 30px 15px;
+        width: 100%;
+        @include breakpoint-2 {
+            padding: 100px 30px 50px 30px;
+        }
+        @include breakpoint-3 {
+            flex-direction: row-reverse;
+            padding: 100px 10px 80px 50px;
+        }
+    }
+    .hero-img-container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+        .hero-img {
+            height: auto;
+            max-width: 100%;
+            @include breakpoint-1 {
+                padding: 30px;
+                max-width: 75%;
+            }
+            @include breakpoint-2 {
+                padding: 30px;
+                max-width: 50%;
+            }
+            @include breakpoint-3 {
+                padding: 10px;
+                width: 50vw;
+                max-width: 100%;
+            }
+            @include breakpoint-4 {
+                padding: 10px;
+                max-width: 75%;
+            }
+        }
+    }
+    .hero-content {
+        align-items: center;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        @include breakpoint-3 {
+            box-sizing: $border-box;
+            float: left;
+            justify-content: left;
+            flex-flow: row wrap;
+            width: 50vw;
+        }
+        .hero-text{
+            color: $white;
+            flex-direction: column;
+            font-family: $title-font;
+            font-size: $font-size-l;
+            font-weight: $font-weight-hero;
+            margin-bottom: 30px;
+            text-align: center;
+            @include breakpoint-2 {
+                font-size: $font-size-xl;
+            }
+            @include breakpoint-3 {
+                text-align: left;
+            }
+            @include breakpoint-4 {
+                margin-bottom: 50px;
+            }
+            span {
+                margin: 0;
+                display: block;
+            }
+            span u {
+                margin: 0;
+                color: $blue;
+            }
+        }
+        .buttons-container {
+            align-items: center;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            margin: auto;
+            
+            @include breakpoint-1 {
+                flex-direction: row;
+            }
+            @include breakpoint-3 {
+                margin: 0;
+                float: left;
+                justify-content: flex-start;
+            }
+        }
+    }
+}

@@ -1,5 +1,6 @@
 // COLOR
 $blue: #007bff;
+$dark-blue: #1445b3;
 $grey:  #343a40;
 $white: #FFF;
 
@@ -12,27 +13,45 @@ $title-font: 'Montserrat', sans-serif;
 
 //FONT-SIZE / WEIGHT
 
-$font-size-button: 6px;
+$font-weight-hero: bolder;
 
-$font-size-s: 4px;
-$font-size-normal: 12px;
-$font-size-l: 36px;
-$font-size-xl: 48px;
-
+$size-menu-icons: 23px;
+$font-size-button: 15px;
 $font-weight-button: bold;
 
-//HEIGHTS
+$font-size-xxs: 4px;
+$font-size-xs: 12px;
+$font-size-s: 15px;
+$font-size-normal: 16px;
+$font-size-l: 34px;
+$font-size-xl: 48px;
 
-$height-button: 20px;
+
+//HEIGHTS WIDTHS
+
+$height-header: 60px;
+
+$height-button: 45px;
+$width-button: 170px;
+
+$footer-form-height: 30px;
 
 
 //BORDER
+$border-box: border-box;
+$button-border-radius: 30px;
 
-$border-radius: 15px;
+$button-border: 2px;
+ 
 
-$border-button: 2px;
+//PADDINGS Y MARGINS
 
+$hero-container-margin: 50px auto;
+    $hero-container-img-margin: auto;
+    $hero-text-margin: 10px;
 
-//PADDINGS
+    $button-padding: 10px 20px;
 
-$padding-button: 10 32px;
+//WIDHT
+
+$logo-widht: 70px;

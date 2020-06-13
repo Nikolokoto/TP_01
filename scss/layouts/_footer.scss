@@ -1,0 +1,132 @@
+@import "../abstract/variables";
+
+
+//FOOTER//
+
+footer {
+    align-items: flex-start;
+    background-color: $dark-blue;
+    color: $white;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0;
+    margin: 0;
+    h1 {
+        font-family: $title-font;
+        font-size: $font-size-l;
+        font-weight: lighter;
+    }
+
+    p {
+        font-family: $title-font;
+        font-size: $font-size-xs;
+        line-height: 23px;
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        color: $white;
+        cursor: pointer;
+        text-decoration: none;            
+        }
+        
+        @include breakpoint-3 {
+            &:hover {
+                color: $dark-blue;
+                transition: color 0.5s ease;
+            }
+        }
+
+    ul {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+
+        li {
+            font-family: $normal-font;
+            font-size: $font-size-s;
+            line-height: 30px;
+            list-style: none;
+            text-align: left;
+            
+        }
+    
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        h4 {
+            font-family: $title-font;
+        }
+        .text-footer {
+            flex-direction: column;
+            font-family: $normal-font;
+            font-size: $font-size-s;
+            line-height: 30px;
+            margin-bottom: 30px;
+            text-align: left;
+            span {
+                margin: 0;
+                display: block;
+            }
+        }
+
+        .icons-footer {
+            display: flex;
+            align-items: flex-start;
+            .icon-container-footer {
+                align-items: center;
+                background-color: $blue;
+                border-radius: 50%;
+                display: flex;
+                height: 35px;
+                justify-content: center;
+                margin: 5px;
+                width: 35px;
+                &:hover  {
+                    color: darken($blue, 30);
+                    transition: color 0.5s ease;
+                }
+                
+            }
+        }
+        .footer-form {
+            display: flex;
+            margin: 10 0;
+            padding-bottom: 30px;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            margin: 0;
+            width: 100%;
+
+            > input {
+                border: none;
+                height: $footer-form-height;
+                margin: 0;
+                padding: 0;
+                max-width: calc(100%-100px);
+            }
+            
+        }
+    }
+    
+    .footer-footer {
+        background-color: darken($dark-blue, 30);
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+
+    }
+
+}

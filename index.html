@@ -3,39 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ADA-TP1</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <img class "lodo-ADA" src="./img/logo-tp.png" alt="logo-ADA"/>
-        <nav class "menu-header">
-            <a href="index.html">Home</a>
-            <a href="#About Us">About Us</a>
-            <a href="#Services">Services</a>
-            <a href="#Portfolio">Portfolio</a>
-            <a href="#Team">Team</a>
-            <a href="#">Lock This</a>
-            <a href="#About Us">Contact Us</a>
-        </nav>
+        <div class="header-container">
+            
+            <div class="logo-container">
+                <a href="index.html">
+                    <img class "logo-ADA" src="./img/logo-tp.png" alt="logo-ADA"/>
+                </a>
+            </div>
+            
+            <a class="menu-button open" href="#main-menu">
+                <i class="fas fa-bars"></i>
+                <nav id="main-menu">
+                    <ul class="menu">
+                        <li><a class="link-menu" href="index.html">Home</a></li>
+                        <li><a class="link-menu" href="#AboutUs">About Us</a></li>
+                        <li><a class="link-menu" href="#Services">Services</a></li>
+                        <li><a class="link-menu" href="#Portfolio">Portfolio</a></li>
+                        <li><a class="link-menu" href="#Team">Team</a></li>
+                        <li><a class="link-menu link-drop-down" href="#drop-down1">Lock This</a></li>
+                            <ul id="drop-down1">
+                                <li><a class="link-menu" href="#">Otra vez Home</a></li>
+                                <li><a class="link-menu" href="#">Otra vez Home</a></li>
+                                <li><a class="link-menu link-drop-down" href="#drop-down2">Linkcito</a></li>
+                                    <ul id="drop-down2">
+                                        <li><a class="link-menu" href="#">Otra vez Home</a></li>
+                                        <li><a class="link-menu" href="#">Otra vez Home</a></li>
+                                        <li><a class="link-menu" href="#">Otra vez Home</a></li>
+                                        <li><a class="link-menu" href="#">Otra vez Home</a></li>
+                                        <li><a class="link-menu" href="#">Otra vez Home</a></li>
+                                    </ul>
+                                <li><a class="link-menu" href="#">Otra vez Home</a></li>
+                                <li><a class="link-menu" href="#">Otra vez Home</a></li>
+                                <li><a class="link-menu" href="#">Otra vez Home</a></li>
+                            </ul>
+                        <li><a class="link-menu" href="#ContactUs">Contact Us</a></li>
+                    </ul>
+                    
+                    <a class="menu-button close" href="#">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </nav>
+            </a>
+        </div>
     </header>
         
-    <hero>
-        <article class="hero-text">
-            We provide <u>solutions</u> for your business
-        </article>
-        <button class="button blue-button">
-            Get stared
-        </button>
-        <button class="button transparent-button">
-            Our Services
-        </button>
+    <hero id="hero">
+        <div class="hero-container">
+            <figure class="hero-img-container">
+                <img class="hero-img" src="img/intro-img.svg" alt="Solutions for bussines"/>
+            </figure>
+            
+            <article class="hero-content">
+                <div class="hero-text">
+                    <span>We provide</span>
+                    <span><u>solutions</u></span>
+                    <span>for your business!</span>
+                </div>
+
+                <div class="buttons-container">
+                    <a href="#AboutUs">
+                        <button class="button blue-button">
+                            Get stared
+                        </button>
+                    </a>
+                
+                    <a href="#Services">
+                        <button class="button transparent-button">
+                            Our Services
+                        </button>
+                    </a>
+                </div>
+            </article>
+        </div>
     </hero>
 
     <main>
-        <section id="About Us">
+        <section id="AboutUs">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
     
         </section>
@@ -87,7 +137,107 @@
     </main>
 
     <footer>
-        
+
+        <div class="header-footer">
+            <h1>WAYNE</h1>
+            <p>Cras fermentum odio eu feugiat
+                    lide par naso tierra.
+                    Justo eget nada terra videa magna
+                    derita valies darta donna mare
+                    fermentum iaculis eu non diam phasellus. 
+                Scelerisque felis imperdiet proin fermentum leo. 
+                Amet volutpat consequat mauris nunc congue.
+            </p>
+        </div>
+
+        <article class="links-footer footer-content">
+            <h4>USEFULL LINKS</h4>
+
+            <ul class="menu-footer">
+                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#AboutUs">About Us</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacity Policy</a></li> 
+            </ul>
+        </article>
+
+        <article class="footer-content infoPlusIcons">
+            <div class="info-footer">
+                <h4>CONTACT US</h4>
+
+                <div class="text-footer">
+                    <span>A108 Adam Street</span>
+                    <span>New York, NY 535022</span>
+                    <span>United States</span>
+                    <span><b>Phone:</b> +1 5589 55488 55</span>
+                    <span><b>Email:</b> info@example.com</span>
+                </div>
+
+            </div>
+
+            <div class="icons-footer">
+                    
+                <a href="#">
+                    <div class="icon-container-footer">
+                         <i class="fab fa-twitter"></i>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="icon-container-footer">
+                        <i class="fab fa-facebook-f"></i>    
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="icon-container-footer">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="icon-container-footer">
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="icon-container-footer">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div> 
+                </a>
+
+            </div>
+
+        </article>
+
+        <article class="footer-content textPlusForm">
+
+            <div class="text-footer">
+                <h4>OUR NEWLETTER</h4>
+    
+                <spam>
+                    Tamen quem nulla quae legam multos aute sint 
+                    culpa legam noster magna veniam enim veniam illum 
+                    dolore legam minim quorum culpa amet magna export 
+                    quem marada parida nodela caramase seza.
+                </spam>
+            </div>
+
+            <div class="footer-form">
+                <form action="google.com" method="GET" id="login-form">
+                    <input type="e-mail"/>
+                    <button class="rectangular-button" type="submit">Subscribe</button>
+            </div>
+        </article>
+
+        <article class="footer-footer">
+            <p>© Copyright <b>Wayne Enterprises.</b> All Rights Reserved </p>
+            <p>Designed by Lunáticxs retardadxs. Lentxs pero segurxs :P</p>
+        </article>
+
     </footer>
 
 </body>
