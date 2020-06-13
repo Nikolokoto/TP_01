@@ -1,36 +1,42 @@
 @import "../abstract/variables";
 
 .button {
-    border-radius: $border-radius;
-    box-sizing: border-box;
+    border-radius: $button-border-radius;
+    box-sizing: $border-box;
     color: $white;
     cursor: pointer;
-    display: inline-block;
     font-family: $title-font;
+    font-size: $font-size-button;
     font-weight: $font-weight-button;
     margin: 10px;
-    padding: 20px;
-    font-size: $font-size-button;
     height: $height-button;
-    padding: $padding-button;
-
+    padding: $button-padding;
+    width: $width-button;
+    
     &.blue-button {
-        border:$border-button solid $blue;
+        border:$button-border solid $blue;
         background-color: $blue;
         &:hover {
-            border: $border-button solid $white;
+            border: $button-border solid $white;
             background-color: transparent;   
         }
     }
         
 
     &.transparent-button {
-        border: $border-button solid $white;
-        background-color: none;
+        border: $button-border solid $white;
+        background-color: transparent;
         &:hover {
+            border: $button-border solid transparent;
             background-color: $blue;
         }
     }
+  
+  &.button-services{
+        padding: 20px;
+        font-size: $font-size-button;
+  }
+
 }
 
 figure.round-icon{
@@ -95,3 +101,26 @@ figure.profile-circle{
     font-weight: 600;
     font-size: 25px;
     color: $dark-blue;}
+
+
+}
+
+.rectangular-button {
+    align-content: center;
+    border: $button-border solid $blue;
+    background-color: $blue;
+    color: $white;
+    display: inline-block;
+    font-family: $normal-font;
+    font-weight: normal;
+    height: $footer-form-height;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+
+    &:hover {
+        border: $button-border solid darken($blue, 30);
+        background-color: darken($blue, 30);
+    }
+}

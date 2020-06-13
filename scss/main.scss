@@ -12,9 +12,11 @@
 @import "./layouts/section_team";
 @import "./layouts/section_testimonials";
 @import "./layouts/section_why_choose_us";
+@import "./layouts/footer";
 
 body {
     margin: 0;
+    padding: 0;
 }
 main{
     max-width: 100%;
