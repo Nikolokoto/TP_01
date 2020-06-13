@@ -1,0 +1,233 @@
+@import "../abstract/variables";
+
+#Testimonials{
+    background-color: $Back-services;
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 60px 0 40px 0;
+    font-family: $open-font;
+    .container-testimonials{
+        width: 100%;
+        .testimonials-header{
+            padding-left: 20%;
+            padding-right: 20%;
+            h3{
+                font-size: $section-tittle;
+                font-weight: 700;
+                text-align: center;
+                padding-bottom: 15px;
+                font-family: $title-font;
+            }
+        }
+    }
+
+/* Carrousel de https://codepen.io/JonAnderDev/pen/wBopXo */
+
+    .carrousel {
+        text-align: left;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        margin-left: 25%;
+        margin-right: 25%;
+        h2 {
+            margin: 0;
+            margin-top: -1.7em;
+            padding: 0;
+            font-size: 1em;
+            text-align: center;
+            color: #bbbbbb;
+        }
+        .slides {
+            width: 400%;
+            left: 0;
+            padding-left: 0;
+            padding-top: 1em;
+            overflow: hidden;
+            list-style: none;
+            position: relative;
+            -webkit-transition: transform .5s;
+            -moz-transition: transform .5s;
+            -o-transition: transform .5s;
+            transition: transform .5s;
+            li {
+                width: 25%;
+                position: relative;
+                float: left;
+            }
+        }
+        li {
+            p {
+                margin-top: 0;
+                text-align: left;
+            }
+            h5{ 
+                position: relative;
+                top: 0px;
+                left: 20%;
+                margin: 0;
+                font-size: 18px;
+                font-style: bold;
+                margin-left: 45px;
+                cursor: pointer;
+                text-align: left;
+            }
+            .description{
+                position: relative;
+                top: 0px;
+                left: 25%;
+                color:$medium-grey;
+                font-family: $open-font;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: left;
+            }
+            q {
+                position: relative;
+                top: 0px;
+                left: 10%;
+                width: 50%;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 25px;
+                font-style: italic;
+                margin-left: 50px;
+                margin-right: 50px;
+                padding-right: 25px;
+                color:$medium-grey;}
+            img {
+                position: relative;
+                float: left;
+                left: 55px;
+                top: -100px;
+                width: 140px;
+                height: 140px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-left: -1.5em;
+                margin-right: 0.5em;
+                vertical-align: middle;
+            }
+        }
+        .slidesNavigation {
+            display: block;
+            list-style: none;
+            text-align: center;
+            bottom: 1em;
+            position: absolute;
+            width: 104px;
+            left: 50%;
+            margin-left: -52px;
+            label {
+                float: left;
+                margin: 6px;
+                display: block;
+                height: 10px;
+                width: 10px;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                border: solid 2px #2980b9;
+                font-size: 0;
+                &:hover {
+                    cursor: pointer;}
+            }
+        }
+        input {
+            display: none;}
+        #radio-1 {
+            &:checked {
+                ~ {
+                    .slidesNavigation {
+                        label#dotForRadio-1 {
+                            background: $dark-blue;}
+                    }
+                }
+            }
+        }
+        #radio-2 {
+            &:checked {
+                ~ {
+                    .slidesNavigation {
+                        label#dotForRadio-2 {
+                            background: $dark-blue;}
+                    }
+                }
+            }
+        }
+        #radio-3 {
+            &:checked {
+                ~ {
+                    .slidesNavigation {
+                        label#dotForRadio-3 {
+                            background: $dark-blue;}
+                    }
+                }
+            }
+        }
+        #radio-4 {
+            &:checked {
+                ~ {
+                    .slidesNavigation {
+                        label#dotForRadio-4 {
+                            background: $dark-blue;}
+                    }
+                }
+            }
+        }
+    }
+    #radio-1 {
+        &:checked {
+            ~ {
+                .slides {
+                    transform: translateX(0%);}
+            }
+        }
+    }
+    #radio-2 {
+        &:checked {
+            ~ {
+                .slides {
+                    transform: translateX(-25%);}
+            }
+        }
+    }
+    #radio-3 {
+        &:checked {
+            ~ {
+                .slides {
+                    transform: translateX(-50%);}
+            }
+        }
+    }
+    #radio-4 {
+        &:checked {
+            ~ {
+                .slides {
+                    transform: translateX(-75%);}
+            }
+        }
+    }
+    @media (max-width: 796px) {
+        .carrousel {
+            height: 8.5em;
+        }
+    }
+    @media (max-width: 480px) {
+        .carrousel {
+            li {
+                p {
+                    padding-left: 0.5em;
+                    padding-right: 0.5em;}
+                q {
+                    font-size: 1em;}
+                img {
+                    width: 2em;
+                    margin-left: -1em;
+                    margin-right: 0.25em;}
+            }
+        }
+    }    
+}
+
+/* El carrousel fue hecho tomando este de referencia
+https://codepen.io/JonAnderDev/pen/wBopXo */

@@ -1,14 +1,27 @@
 // COLOR
 $blue: #007bff;
+$light-grey: #C3E0F9;
+$medium-grey: #74868E;
 $grey:  #343a40;
 $white: #FFF;
+$black: black;
+$pink: pink;
+$yellow: yellow; 
+$orange: #E7E454;
+$soft-red: #E88B9F;
+$soft-light-blue: #87DBCC;
+$green: #84E369;
+//BACKGROUND COLORS
 
-
+$Back-services: #ecf5ff;
 
 //FONTS
 
 $normal-font: 'Open Sans', sans-serif;
 $title-font: 'Montserrat', sans-serif;
+
+$Mont-font: 'Montserrat', sans-serif;
+$open-font: “Open-Sans”, sans-serif;
 
 //FONT-SIZE / WEIGHT
 
@@ -20,6 +33,9 @@ $font-size-l: 36px;
 $font-size-xl: 48px;
 
 $font-weight-button: bold;
+
+$section-tittle: 36px;
+$section-description: 15px;
 
 //HEIGHTS
 
@@ -36,3 +52,59 @@ $border-button: 2px;
 //PADDINGS
 
 $padding-button: 10 32px;
+
+// COLOR
+$blue: #007bff;
+$dark-blue: #1445b3;
+$grey:  #343a40;
+$white: #FFF;
+$yellow: #d6ff22;
+$why-back: #004a99;
+
+//FONTS
+
+$normal-font: 'Open Sans', sans-serif;
+$title-font: 'Montserrat', sans-serif;
+
+//FONT-SIZE / WEIGHT
+
+$font-weight-hero: 900;
+
+$size-menu-icons: 23px;
+$font-size-button: 15px;
+$font-weight-button: bold;
+
+$font-size-s: 4px;
+$font-size-normal: 16px;
+$font-size-l: 34px;
+$font-size-xl: 48px;
+
+
+//HEIGHTS WIDTHS
+
+$height-header: 60px;
+$height-button: 40px;
+$width-button: 150px;
+
+
+//BORDER
+$border-box: border-box;
+$button-border-radius: 15px;
+$button-border: 2px;
+ 
+
+//PADDINGS Y MARGINS
+
+$logo-margin: 0 20px;
+
+$hero-container-margin: auto;
+$hero-container-padding: 100px 0 20px 0;
+$hero-container-img-margin: 0 50px;
+$hero-text-margin: 10px;
+
+$butons-container-padding: 10px;
+$button-padding: 10 32px;
+
+//WIDHT
+
+$logo-widht: 70px;

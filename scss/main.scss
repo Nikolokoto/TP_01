@@ -16,6 +16,9 @@
 body {
     margin: 0;
 }
+main{
+    max-width: 100%;
+}
 
 p {
     font-size: $font-size-normal;
