@@ -1,0 +1,35 @@
+@import "../abstract/variables";
+
+.card{
+    position: relative;
+    width: 400px;
+    height: 150px;
+    padding: 30px;
+    margin: 0 20px 40px 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: $white;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: $blue;
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);}
+}
+
+.blue-card{
+    background: #00458f;
+    border-color: #00458f;
+    border-radius: 10px;
+    width: 400px;
+    height: 350px;
+    margin: 15px 15px;
+    padding: 15px 30px;
+    overflow: hidden;
+    text-align: center;
+    color: $white;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        background: #003b7a;
+        border-color: #003b7a;}
+}

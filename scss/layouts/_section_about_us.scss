@@ -1,2 +1,154 @@
 @import "../abstract/variables";
+@import "../components/buttons";
 
+#About-Us {
+    background-color: $white;
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 60px 0 40px 0;
+    font-family: $normal-font;
+    padding-left: 10%;
+    padding-right: 10%;
+    .cont{
+        width: 100%;
+        .About-Us-header{
+            padding-bottom: 50px;
+            padding-left: 10%;
+            padding-right: 10%;
+            text-align: center;
+            h3{
+                font-size: $section-tittle;
+                font-weight: 700;
+                padding-bottom: 15px;
+                font-family: $title-font;
+            }
+            p{
+                font-family: $open-font;
+                font-size: 18px;
+                font-weight: 400;
+                width: 50%;
+                text-align: center;
+                margin: auto;
+                padding-bottom: 60px;
+                line-height: 26px;
+                color:$medium-grey;
+            } 
+        }
+        .container-about-us{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column; 
+            align-items: center;
+            margin-right: 10%;
+            margin-left: 10%;
+            
+            .first-info{
+                position: relative;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-bottom: 25px;
+                .text-description{
+                    width: 40%;
+                    float: left;
+                    padding-right: 15px;
+                    line-height: 26px;
+                    .description{
+                        font-size: $font-size-normal;
+                        font-weight: 400;
+                        line-height: 25px;
+                        text-align: left;
+                        color:$medium-grey;
+                        margin-top: 0;
+                        margin-left: 25px;
+                        margin-bottom: 0;}
+                }
+                .Items-content{
+                    .icons-info{
+                        background: #fff;
+                        background-size: cover;
+                        .icon-card{
+                            figure.round-icon{
+                                .fa-suitcase{
+                                    color: $dark-blue;
+                                    &:hover{
+                                        color: $white;}
+                                }
+                                .fa-images{
+                                    color: $dark-blue;
+                                    &:hover{
+                                        color: $white;}
+                                }
+                                .fa-chart-bar{
+                                    color: $dark-blue;
+                                    &:hover{
+                                        color: $white;}    
+                                }
+                            h4{
+                                font-style: $title-font;
+                                margin-left: 10px;
+                                font-weight: 800;
+                                font-size: 28px;
+                                line-height: 20px;}
+                            .description{
+                                margin-left: 10px;}
+                            }
+                        }
+                    }
+                }
+                .img-card{
+                    position: relative;
+                    padding-right: 40px;
+                }  
+            }
+            .second-info{
+                position: relative;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-bottom: 25px;
+                .img-card{
+                    position: relative;
+                    width: 40%;
+                    float: left;
+                    padding-right: 40px;}
+                .text-description{
+                    h3{
+                        font-size: $font-size-normal;
+                    }
+                    .description{
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 25px;
+                        color:$medium-grey;
+                        text-align: left;}
+                }
+            }
+            .third-info{
+                position: relative;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-bottom: 25px;
+                .text-description{
+                    width: 40%;
+                    float: left;
+                    margin: 0;
+                    h3{
+                        color: $black;
+                        font-size: $font-size-normal;}
+                    .description{
+                        padding-right: 15px;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 25px;
+                        text-align: left;}
+                        color:$medium-grey;
+                }
+                .img-card{
+                    position: relative;
+                    padding-left: 40px; 
+                }
+            }
+        }
+    }
+}

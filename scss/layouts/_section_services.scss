@@ -1,0 +1,114 @@
+@import "../abstract/variables";
+
+#Services{
+    background-color: $Back-services;
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 60px 0 40px 0;
+    font-family: $open-font;
+    .section-header{
+        padding-bottom: 50px;
+        padding-left: 20%;
+        padding-right: 20%;
+        h3{
+            font-size: $section-tittle;
+            font-weight: 700;
+            text-align: center;
+            padding-bottom: 15px;
+            font-family: $title-font;
+        }
+        .description{
+            font-family: $open-font;
+            font-size: 18px;
+            font-weight: 400;
+            width: 50%;
+            text-align: center;
+            margin: auto;
+            padding-bottom: 60px;
+            line-height: 26px;
+            color:$medium-grey;
+        }
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 25%;
+        margin-left: 25%;
+        justify-self: center;
+        width: calc(80% - 100px);
+        .card{
+            h5{ 
+                position: relative;
+                top: 15px;
+                margin: 0;
+                font-size: 18px;
+                font-style: bold;
+                margin-left: 45px;
+                cursor: pointer;
+            }
+            .description{
+                position: relative;
+                top: 55px;
+                top: 25px;
+                color:$medium-grey;
+                font-family: $open-font;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: left;
+                margin-top: 0;
+                margin-left: 45px;
+                margin-bottom: 0;
+            }
+            .fa-book-open{
+                margin-right: 0;
+                display: flex;
+                font-size: 60px;
+                color: $orange;
+                position: absolute;
+                left: -10px;
+                top: calc(50% - 32px);}
+            .fa-heart{
+                margin-right: 0;
+                display: flex;
+                font-size: 60px;
+                color: $soft-red;
+                position: absolute;
+                left: -10px;
+                top: calc(50% - 32px);}
+            .fa-paper-plane{
+                margin-right: 0;
+                display: flex;
+                font-size: 60px;
+                color: $soft-light-blue;
+                position: absolute;
+                left: -10px;
+                top: calc(50% - 32px);}
+            .fa-comment{
+                margin-right: 0;
+                display: flex;
+                font-size: 60px;
+                color: $green;
+                position: absolute;
+                left: -10px;
+                top: calc(50% - 32px);}
+            .fa-globe-europe{
+                margin-right: 0;
+                display: flex;
+                font-size: 60px;
+                color: $yellow;
+                position: absolute;
+                left: -10px;
+                top: calc(50% - 32px);}
+            .fa-clock{
+                margin-right: 0;
+                display: flex;
+                font-size: 60px;
+                color: $blue;
+                position: absolute;
+                left: -10px;
+                top: calc(50% - 32px);
+            }
+        }
+    }
+}
+

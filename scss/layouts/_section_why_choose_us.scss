@@ -1,0 +1,107 @@
+@import "../abstract/variables";
+
+#Why-choose-us{
+    background-color: $why-back;
+    padding: 60px 0 40px 0;
+    font-family: $open-font;
+    .why-header{
+        padding-bottom: 50px;
+        padding-left: 20%;
+        padding-right: 20%;
+        h3{
+            color: $white;
+            font-size: $section-tittle;
+            font-weight: 700;
+            padding-bottom: 15px;
+            text-align: center;
+            font-family: $title-font;}
+        .description{
+            font-family: $open-font;
+            font-size: 18px;
+            font-weight: 400;
+            width: 50%;
+            text-align: center;
+            margin: auto;
+            padding-bottom: 60px;
+            line-height: 26px;
+            color:$white}
+    }
+    .container-why{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-right: 5%;
+            margin-left: 5%;
+            position: relative;
+            .blue-card{
+                .why-body{
+                    .fa-gem{
+                        position: relative;
+                        font-size: 42px;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                        color: $light-grey;}
+                    .fa-deaf{
+                        font-size: 42px;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        left: -10px;
+                        color: $light-grey;}
+                    .fa-sticky-note{
+                        font-size: 42px;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        left: -10px;
+                        color: $light-grey;}
+                    h4{
+                        font-style: $title-font;
+                        margin-left: 10px;
+                        font-weight: 800;
+                        font-size: 28px;
+                        line-height: 20px;}
+                    .card-text{
+                        font-family: $open-font;
+                        font-size: 18px;
+                        font-weight: 400;
+                        width: 50%;
+                        text-align: center;
+                        margin: auto;
+                        padding-bottom: 60px;
+                        line-height: 26px;
+                        color:$light-grey;}
+                        .readmore {
+                            color: $white;
+                            font-weight: 600;
+                            display: inline-block;
+                            border-bottom: #00458f solid 2px;
+                            &:hover {
+                                transition: 0.3s ease-in-out;
+                                border-bottom: $white solid 2px;}
+                    }
+                } 
+            }
+    }
+    .why-counter{
+        display: flex;
+        flex-direction: row;
+        float: left;
+        max-width: 100%;
+        position: relative;
+        padding-top: 40px;
+        position: relative;
+        .info-01{
+            padding: 50px;
+            span{
+                font-family: $title-font;
+                font-weight: bold;
+                font-size: 48px;
+                color: $white}
+            .description{
+                padding: 0;
+                margin: 0 0 20px 0;
+                font-family: $normal-font;
+                font-size: 14px;
+                color:$white;}
+            }
+    }
+}
