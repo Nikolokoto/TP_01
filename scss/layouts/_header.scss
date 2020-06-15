@@ -1,8 +1,206 @@
 @import "../abstract/variables";
 
-#header {
-    display: flex;
-    .logo {
-        max-width: 200px;
+//HEADER//
+
+header {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    .header-container {
+        align-items: center;
+        background-color: $white;
+        display: flex;
+        height: $height-header;
+        justify-content: space-between;
+        position: relative;
+        width: 100vw;
+        .logo-container a {
+            align-items: center;
+            box-sizing: border-box;
+            display: flex;
+            float: left;
+            margin-left: 20px;
+            width: $logo-widht;
+            .logo-ADA {
+                max-width: 100%;
+            }
+            @include breakpoint-3 {
+                margin-left: 70px;    
+            } 
+        }          
+        .menu-button {
+            font-size: $size-menu-icons;
+            float: right;
+            top: 20px;
+            right: 30px;
+            position: absolute;
+            text-align: center;
+            top: 20px;
+            .open {
+                &:link {
+                    color: $dark-blue !important;
+                }
+                &:visited {
+                    color: $dark-blue;
+                    }
+                &:active {
+                    color: $white;
+                }
+            }
+            .close {
+                color: $white !important;
+                &:link {
+                    color: $white;
+                    }
+                &:visited {
+                    color: $white;
+                    }
+                &:active {
+                    color: $white;
+                }
+            }
+            @include breakpoint-3 {
+                display: none;
+            }
+        }
+        #main-menu {
+            display: none;
+            position: relative;
+            &:target {
+                box-sizing: $border-box;
+                height: 100vh;
+                background: content-box;
+                background-color: darken($blue, 30);
+                display: flex;
+                opacity: 90%;
+                margin: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: background 1s linear;
+                width: 100vw;                  
+            }
+            @include breakpoint-3 {
+                align-items: center;
+                background-color: none;
+                display: flex;
+                float: right;
+                justify-content: space-between;
+                margin-right: 70px;
+            }
+            
+            
+            .menu {
+                background-color: darken($dark-blue, 30);
+                box-sizing: $border-box;
+                display: flex;
+                flex-direction: column;
+                font-size: $font-size-normal;
+                font-weight: 500;
+                height: auto;
+                margin: 0;
+                padding: 30px 20px;
+                text-align: left;
+                visibility: visible;
+                width: 220px; 
+                @include breakpoint-3 {
+                    align-items: center;
+                    background-color: inherit;
+                    display: flex;
+                    flex-direction: row;
+                    float: right;
+                    height: inherit;
+                    justify-content: space-between;
+                    padding: 0 5px;
+                    width: inherit;
+                #drop-down1 {
+                    display: none;
+                    &:target {
+                        background-color: $white;
+                        display: block;
+                        margin: 0;
+                        padding: 5px;
+                        position: relative;
+                        top: $height-header;
+                        right: 70px;
+                        width: 120px;
+                    } /*Fede... esto del drop down y el :after lo intentamos, pero quedó choto chotísimo... y gran parte del retrazo se debe a este reto. Lo sentimos :( */
+                }
+                #drop-down2 {
+                    display: none;
+                    &:target {
+                        background-color: $white;
+                        display: block;
+                        margin: 0;
+                        position: relative;
+                        top: 60px;
+                        right: calc(100% - 30px);
+                    }
+                }
+            } 
+                                                
+                li {
+                    color: $white;
+                    font-family: $title-font;
+                    font-size: $font-size-normal;
+                    list-style: none;
+                    padding-bottom: 25px;
+                    width: inherit;
+                    @include breakpoint-3 {
+                        color: $dark-blue;
+                        font-size: $font-size-s;
+                        padding: 0 5px;
+                    }
+                    
+                    & .link-menu {
+                        text-decoration: none;
+                        @include breakpoint-3 {
+                            color: $dark-blue;
+                            padding: 0 5px;
+                        }
+                        
+
+                        &:link {
+                            color: $white;
+                            @include breakpoint-3 {
+                                color: $dark-blue;
+                                padding: 0 5px;
+                            }
+                                
+                        }
+                        &:visited{
+                            color: $white;
+                            @include breakpoint-3 {
+                                color: $dark-blue;
+                                padding: 0 5px;
+                            }    
+                        }
+                        &:hover{
+                            color: $white;
+                            @include breakpoint-3 {
+                                color: $blue;      
+                                transition: color 0.5s ease;
+                            }
+                        }    
+                        &:active {
+                            color: $dark-blue;
+
+                        }
+                        .link-drop-down {
+                            &:after{
+                                content: "";
+                                padding-left: 10px;
+                                
+                            }                       
+        
+                        }
+                    }
+                }    
+
+            }
+                
+            
+        }
+                        
     }
 }
